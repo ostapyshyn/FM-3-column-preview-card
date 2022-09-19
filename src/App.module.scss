@@ -1,0 +1,25 @@
+@import './index.module.scss';
+
+.App {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 785px) {
+    height: auto;
+    padding-block: 88px;
+  }
+}
+
+.cars {
+  display: flex;
+
+  @media (max-width: 785px) {
+    flex-direction: column;
+  }
+}

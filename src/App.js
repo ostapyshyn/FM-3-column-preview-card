@@ -1,17 +1,24 @@
-import './App.css';
 import Card from './components/Card';
-import sedans from './assets/svg/icon-sedans.svg';
+import cars from './assets/data/cars';
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Card
-        text="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
-        title="Sedans"
-        image={sedans}
-        color={'--bright-orange'}
-      />
-    </div>
+    <main className={styles.App}>
+      <div className={styles.cars}>
+        {cars.map((car, index) => {
+          return (
+            <Card
+              text={car.text}
+              key={index}
+              title={car.title}
+              image={car.image}
+              color={car.color}
+            />
+          );
+        })}
+      </div>
+    </main>
   );
 }
 

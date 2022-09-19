@@ -1,12 +1,12 @@
-main {
+article {
   width: 100%;
   max-width: 307px;
   padding: 48px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 8px;
 
   img {
@@ -40,5 +40,13 @@ main {
     border-radius: 25px;
     padding: 12px 32px;
     border: none;
+    margin-top: auto;
+
+    &:hover {
+      color: var(--very-light-gray) !important;
+      background-color: transparent;
+      outline: 2px solid var(--very-light-gray);
+      cursor: pointer;
+    }
   }
 }
