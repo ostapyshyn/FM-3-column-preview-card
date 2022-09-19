@@ -1,9 +1,44 @@
 main {
   width: 100%;
   max-width: 307px;
+  padding: 48px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
+
+  img {
+    margin-bottom: 35px;
+  }
+
+  h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--transparent-white);
+    margin-bottom: 83px;
+  }
+
+  button {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    background: var(--very-light-gray);
+    border-radius: 25px;
+    padding: 12px 32px;
+    border: none;
+  }
 }

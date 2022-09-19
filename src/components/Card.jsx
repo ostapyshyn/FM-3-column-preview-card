@@ -8,7 +8,7 @@ function Card({ image, title, text, color }) {
         <img src={image} alt="car" />
         <h1>{title}</h1>
         <p>{text}</p>
-        <button>Learn More</button>
+        <button style={{ color: `var(${color})` }}>Learn More</button>
       </article>
     </main>
   );
